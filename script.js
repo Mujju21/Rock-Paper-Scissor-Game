@@ -13,31 +13,31 @@ function playGame(playerMove){
 
     let result=' ';
 
-    if (playerMove==='Scissor'){
-        if (computerMove === 'Rock'){
+    if (playerMove==='scissor'){
+        if (computerMove === 'rock'){
             result = 'You Lose.';
-        }else if(computerMove === 'Paper'){
+        }else if(computerMove === 'paper'){
             result ='You Win.';
-        }else if(computerMove === 'Scissor'){
+        }else if(computerMove === 'scissor'){
             result = 'Tie.';
         }
     
-    }else if(playerMove==='Paper'){
+    }else if(playerMove==='paper'){
 
-        if (computerMove === 'Rock'){
+        if (computerMove === 'rock'){
             result = 'You Win.';
-        }else if(computerMove === 'Paper'){
+        }else if(computerMove === 'paper'){
             result ='Tie.';
-        }else if(computerMove === 'Scissor'){
+        }else if(computerMove === 'scissor'){
             result = 'You Lose.';
         }
       
-    }else if(playerMove==='Rock'){
-        if (computerMove === 'Rock'){
+    }else if(playerMove==='rock'){
+        if (computerMove === 'rock'){
             result = 'Tie.';
-        }else if(computerMove === 'Paper'){
+        }else if(computerMove === 'paper'){
             result ='You Lose.';
-        }else if(computerMove === 'Scissor'){
+        }else if(computerMove === 'scissor'){
             result = 'You Win.';
         }
     }
@@ -70,13 +70,13 @@ function function1(){
     let computerMove = ' ';
 
     if (randomNo >=0 && randomNo < 1/3){
-        computerMove= 'Rock';
+        computerMove= 'rock';
 
     }else if(randomNo >= 1/3 && randomNo < 2/3){
-        computerMove = 'Paper';
+        computerMove = 'paper';
 
     }else if(randomNo >= 2/3 && randomNo < 1){
-        computerMove = 'Scissor';
+        computerMove = 'scissor';
     }
 
     return computerMove;
